@@ -42,6 +42,9 @@ end
 
 group :test do
   gem 'capybara', '2.7.1'
+  gem 'cucumber-rails', require: false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
 end
 
 group :development do
